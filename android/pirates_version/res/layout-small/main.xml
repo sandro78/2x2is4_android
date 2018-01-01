@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/main_layout"
+        >
+    <Button android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/buy_button"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/full_version_button_text"
+        />
+	<Button android:layout_width="80dp"
+			android:layout_height="60dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:id="@+id/premium_button"
+			android:textColor="@color/white"
+			android:textSize="27sp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="10dp"
+			android:text="@string/premium_game_button_text"
+	/>
+	<LinearLayout android:orientation="horizontal"
+				  android:layout_width="fill_parent"
+				  android:layout_height="fill_parent"
+				  android:id="@+id/buttons_layout"
+				  android:gravity="center"
+			>
+		<TableLayout android:layout_width="200dp"
+					  android:id="@+id/linearLayout1"
+					  android:gravity="center"
+					  android:layout_height="200dp"
+				>
+			<Button
+					android:id="@+id/buttonGame"
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:padding="5dp"
+					android:text="@string/play"
+					android:textColor="@color/white"
+					android:textSize="17sp"
+					android:textStyle="bold"
+					/>
+			
+			<Button
+					android:id="@+id/buttonLearn"
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:text="@string/learn"
+					android:padding="5dp"
+					android:textColor="@color/white"
+					android:textSize="17sp"
+					android:textStyle="bold"
+					/>
+			
+			<Button
+					android:id="@+id/buttonHistory"
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:text="@string/history"
+					android:padding="5dp"
+					android:textColor="@color/white"
+					android:textSize="17sp"
+					android:textStyle="bold"
+					/>
+			
+			<Button
+					android:id="@+id/buttonSettings"
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:text="@string/settings"
+					android:padding="5dp"
+					android:textColor="@color/white"
+					android:textSize="17sp"
+					android:textStyle="bold"
+					/>
+
+		</TableLayout>
+	</LinearLayout>
+</RelativeLayout>
+

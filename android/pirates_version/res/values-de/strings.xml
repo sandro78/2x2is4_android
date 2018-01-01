@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+    <string name="won_message_to_social_network">%1$sIch habe dem Piraten %2$s bis %3$u beigebracht, und sein Schiff auf %4$s im %5$s Level mit %6$s zerstört.</string>
+    <string name="loose_message_to_social_network">%1$sDer Pirat hat mich mit %2$s zerstört! Räche mich!</string>
+    <string name="are_you_sure">Bist Du Dir sicher?</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="continued">Weiter</string>
+    <string name="division">Dividieren</string>
+    <string name="easy">Leicht</string>
+    <string name="finish">Spiel beenden</string>
+    <string name="hard">Schwer</string>
+    <string name="history">Geschichte</string>
+    <string name="learn">Lernen</string>
+    <string name="medium">Mittel</string>
+    <string name="multiplication">Multiplizieren</string>
+    <string name="pause">Pause</string>
+    <string name="play">Spielen</string>
+    <string name="remember">Erinnere Dich!</string>
+    <string name="restart">Spiel neu starten</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="yes">Ja</string>
+    <string name="low_memory_message">Gerät hat nicht genug Speicherplatz. Spiel geht ohne Animation weiter. Du kannst das Spiel besser genießen, wenn Du mehr Speicher frei gibst und das Spiel aus aus dem Hauptmenü noch einmal startest.</string>
+    <string name="low_memory">Wenig Speicher</string>
+    <string name="rate_message">Gefällt Ihnen diese App? Dann bitten wir Sie um eine Bewertung oder einen Review. Ihre Meinung ist uns sehr wichtig.</string>
+    <string name="later">Später</string>
+    <string name="rate_it">Bewerten</string>
+    <string name="never">Nie</string>
+    <string name="settings">Einstellungen</string>
+    <string name="division_promo">Abteilungsmodus ist nur bei PRO-Version der Anwendung verfügbar</string>
+    <string name="times_promo">Stundenpläne 12x12 sind nur bei PRO-Version der Anwendung verfügbar</string>
+    <string name="buy">Kaufen</string>
+    <string name="no_AD">Keine Werbung</string>
+    <string name="no_AD_explanation">Entschuldigung, es gibt momentan keine Werbungen zum ansehen. Bitte überprüfe deine Internetverbindung und versuche es später nochmal.</string>
+    <string name="premium_game_title">Premium-Spiel</string>
+    <string name="premium_game_explanation">Du hast die Chance erhalten, ein Premium-Spiel bis Nummer %d zu spielen! Wiederhole den Vorgang, um zum nächsten Level des Premium-Spiels zu gelangen.</string>
+    <string name="premium_game_button_text">Premium\nSpiel</string>
+    <string name="full_version_explanation">Die Vollversion ist werbefrei und gibt Ihnen die Möglichkeit die Multiplikationstabelle bis 12 mal 12 zu erlernen.</string>
+    <string name="full_version_button_text">Vollversion</string>
+</resources>

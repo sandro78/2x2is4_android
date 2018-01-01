@@ -1,3 +1,4 @@
+/**
 MIT License
 
 Copyright (c) 2018 OkToGames
@@ -19,3 +20,26 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+package com.oktogames.app_2x2is4.light;
+
+import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
+import android.util.Log;
+
+
+public class TwoXTwoIs4Application extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+    <string name="won_message_to_social_network">%1$s私は、海賊に「%2$s」の%3$uまで教え、%4$sの船（%5$sレベル、%6$s）を撃破しました。あなたもできますか?</string>
+    <string name="loose_message_to_social_network">%1$s海賊が%2$sで私を攻撃しました!私の代わりにやり返してください!</string>
+    <string name="are_you_sure">よろしいですか?</string>
+    <string name="cancel">キャンセル</string>
+    <string name="continued">続行</string>
+    <string name="division">割り算</string>
+    <string name="easy">初級</string>
+    <string name="finish">ゲームを終了</string>
+    <string name="hard">上級</string>
+    <string name="history">履歴</string>
+    <string name="learn">学習</string>
+    <string name="medium">中級</string>
+    <string name="multiplication">かけ算</string>
+    <string name="pause">一時停止</string>
+    <string name="play">プレイ</string>
+    <string name="remember">記憶</string>
+    <string name="restart">ゲームを再開</string>
+    <string name="unknown">不明</string>
+    <string name="yes">はい</string>
+    <string name="low_memory_message">デバイスのメモリーが不足しています。ゲームをアニメーション抜きで続行します。よりゲームをお楽しみいただくため、一部のメモリーを整理して、メインメニューからゲームを再開してください。</string>
+    <string name="low_memory">メモリー不足</string>
+    <string name="rate_message">このアプリは好きですか？　評価するかレビューを書いて下さい。お客様のご意見は最重視されます。</string>
+    <string name="later">また使う</string>
+    <string name="rate_it">評価</string>
+    <string name="never">もう使わない</string>
+    <string name="settings">設定</string>
+    <string name="division_promo">割り算モードはこのアプリケーションのPROバージョンのみで利用可能です。</string>
+    <string name="times_promo">九九12x12はこのアプリケーションのPROバージョンのみで利用可能です。</string>
+    <string name="buy">買う</string>
+    <string name="no_AD">広告なし</string>
+    <string name="no_AD_explanation">申し訳ありませんが、視聴する広告が現在ありません。インターネット接続を確認してから再度お試しください。</string>
+    <string name="premium_game_title">プレミアムゲーム</string>
+    <string name="premium_game_explanation">番号%dまでプレミアムゲームをプレイする機会があります！プレミアムゲームの次のレベルを取得するには、手順を繰り返してください。</string>
+    <string name="premium_game_button_text">プレミアム版</string>
+    <string name="full_version_explanation">広告なしのフルバージョンでは、12X12までの掛け算表を学べます。</string>
+    <string name="full_version_button_text">完全版を購入</string>
+</resources>

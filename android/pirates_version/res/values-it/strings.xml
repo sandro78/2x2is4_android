@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+    <string name="won_message_to_social_network">%1$sHo insegnato al pirata la %2$s fino a %3$u e ho distrutto la nave in %4$s nel livello %5$s in %6$s minuti.</string>
+    <string name="loose_message_to_social_network">%1$sIl pirata mi ha distrutto con la %2$s! Vendicami!</string>
+    <string name="are_you_sure">Sei sicuro?</string>
+    <string name="cancel">Annulla</string>
+    <string name="continued">Continua</string>
+    <string name="division">Divisione</string>
+    <string name="easy">Facile</string>
+    <string name="finish">Esci dal gioco</string>
+    <string name="hard">Difficile</string>
+    <string name="history">Storia</string>
+    <string name="learn">Impara</string>
+    <string name="medium">Intermedio</string>
+    <string name="multiplication">Moltiplicazione</string>
+    <string name="pause">Pausa</string>
+    <string name="play">Gioca</string>
+    <string name="remember">Ricorda</string>
+    <string name="restart">Riavvia il gioco</string>
+    <string name="unknown">Sconosciuto</string>
+    <string name="yes">Si</string>
+    <string name="low_memory_message">Memoria insufficiente del tuo dispositivo. Il gioco proseguirà ma senza animazione. Per una migliore visualizzazione rendi disponibile altra memoria e riavvia il gioco dal menu principale</string>
+    <string name="low_memory">Memoria in esaurimento</string>
+    <string name="rate_message">Ti piace questa applicazione? Scrivi una recensione. La tua opinione è importante per la nostra crescita.</string>
+    <string name="later">Dopo</string>
+    <string name="rate_it">Valutala</string>
+    <string name="never">Mai</string>
+    <string name="settings">Regolazioni</string>
+    <string name="division_promo">La modalità "Divisione" è disponibile solo nella versione PRO</string>
+    <string name="times_promo">Le tabelline fino al 12 sono disponibili solo nella versione PRO</string>
+    <string name="buy">Comprare</string>
+    <string name="no_AD">Niente pubblicità</string>
+    <string name="no_AD_explanation">Spiacente, al momento non c\'è alcuna pubblicità da guardare. Verifica la tua connessione a Internet e riprova più tardi.</string>
+    <string name="premium_game_title">Gioco premium</string>
+    <string name="premium_game_explanation">Hai una possibilità di giocare in modalità premium fino al numero %d! Ripeti la procedura per raggiungere il livello successivo della modalità premium.</string>
+    <string name="premium_game_button_text">Gioco\npremium</string>
+    <string name="full_version_explanation">La versione completa è senza pubblicità e ti permette di imparare la tabellina del 12.</string>
+    <string name="full_version_button_text">Versione completa</string>
+</resources>

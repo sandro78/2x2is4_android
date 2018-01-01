@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+    <string name="won_message_to_social_network">%1$@=لقد عرفت القرصان %2$@ حتى %3$u ودمرت سفينته في %4$@ on %5$@ المستوى %6$@. هل تستطيع ذلك؟</string>
+    <string name="loose_message_to_social_network">%1$@=لقد دمرني القرصان بـ %2$@! انتقم مني!</string>
+    <string name="are_you_sure">هل أنت متأكد؟</string>
+    <string name="cancel">إلغاء</string>
+    <string name="continued">استمر</string>
+    <string name="division">القسم</string>
+    <string name="easy">سهل</string>
+    <string name="finish">إنهاء اللعبة</string>
+    <string name="hard">صعب</string>
+    <string name="history">تاريخ</string>
+    <string name="learn">تعلم</string>
+    <string name="medium">متوسط</string>
+    <string name="multiplication">مضاعفة</string>
+    <string name="pause">توقف</string>
+    <string name="play">العب</string>
+    <string name="remember">تذكر</string>
+    <string name="restart">إعادة تشغيل اللعبة</string>
+    <string name="unknown">غير معروف</string>
+    <string name="yes">نعم</string>
+    <string name="low_memory_message">لا توجد ذاكرة كافية على الجهاز. وسوف تستمر اللعبة من دون رسوم المتحركة. لتجربة أفضل حاول تحرير بعض الذاكرة وإعادة تشغيل اللعبة من القائمة الرئيسية </string>
+    <string name="low_memory">مساحة  الذاكرة قليلة</string>
+    <string name="rate_message"> هل أعجبك هذا التطبيق؟ الرجاء تقييمه من خلال كتابة رأيك. رأيك مهم جدًا بالنسبة لنا</string>
+    <string name="later">فيما بعد</string>
+    <string name="rate_it">تقييم</string>
+    <string name="never">أبدًا</string>
+    <string name="settings">الإعدادات</string>
+    <string name="no_AD">No AD</string>
+    <string name="no_AD_explanation">Sorry no ADs to watch on the moment. Please check your Internet connectivity and try again later.</string>
+    <string name="premium_game_title">Premium game</string>
+    <string name="premium_game_explanation">You\'ve got a chance to play premium game till %d number! Repeat procedure in order to get next level of premium game.</string>
+    <string name="premium_game_button_text">Premium\ngame</string>
+    <string name="full_version_explanation">The full version is ad-free and allows you to learn the multiplication table of 12 by 12.</string>
+    <string name="full_version_button_text">Buy full\nversion</string>
+</resources>

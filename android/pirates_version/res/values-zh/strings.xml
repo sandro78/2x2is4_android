@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+    <string name="won_message_to_social_network">%1$s我指导了海盗 %2$s 直至 %3$u，然后在 %4$s 在第 %5$s 关 %6$s 内击沉了他的船只。你能吗？</string>
+    <string name="loose_message_to_social_network">%1$s海盗使用 %2$s 杀死我了！为我报仇！</string>
+    <string name="are_you_sure">你确定吗？</string>
+    <string name="cancel">取消</string>
+    <string name="continued">继续</string>
+    <string name="division">除法</string>
+    <string name="easy">容易</string>
+    <string name="finish">完成游戏</string>
+    <string name="hard">困难</string>
+    <string name="history">历史</string>
+    <string name="learn">学习</string>
+    <string name="medium">中等</string>
+    <string name="multiplication">乘法</string>
+    <string name="pause">暂停</string>
+    <string name="play">开始</string>
+    <string name="remember">记住我</string>
+    <string name="restart">重玩游戏</string>
+    <string name="unknown">未知</string>
+    <string name="yes">是</string>
+    <string name="low_memory_message">设备上内存不足。游戏将会继续但没有动画。为了更好地体验游戏，请尝试释放些内存，然后从主菜单重新开始游戏</string>
+    <string name="low_memory">内存过低</string>
+    <string name="rate_message">您喜欢这款应用吗？请对其评级并发表评论。您的意见对于我们而言很重要。</string>
+    <string name="later">稍后</string>
+    <string name="rate_it">评级</string>
+    <string name="never">从不</string>
+    <string name="settings">设置</string>
+    <string name="division_promo">分割模式只在“专业”版应用中出现。</string>
+    <string name="times_promo">12x12的时刻表只在“专业”版应用中出现。</string>
+    <string name="buy">購買</string>
+    <string name="no_AD">没有广告</string>
+    <string name="no_AD_explanation">抱歉暂时没有广告可观看。请检查您的网络连接，稍后再试。</string>
+    <string name="premium_game_title">高端游戏</string>
+    <string name="premium_game_explanation">您有一次机会玩高端游戏到%d！重复该过程，以获得下一等级的高端游戏。</string>
+    <string name="premium_game_button_text">高端游戏</string>
+    <string name="full_version_explanation">完整版本无广告，并且您可以学习12 X 12乘法表。</string>
+    <string name="full_version_button_text">购买完整版</string>
+</resources>

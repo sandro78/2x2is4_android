@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/settings_table_layout"
+              android:gravity="center_horizontal"
+        >
+    <include layout="@layout/t2_setting" android:layout_weight="1"
+             android:layout_width="fill_parent"
+             android:layout_gravity="top"
+             android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="12"
+              android:id="@+id/settings_number_text"
+              style="@style/settings_number"
+              android:layout_gravity="bottom|center_horizontal"/>
+
+    <SeekBar android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingBottom="5sp"
+             android:paddingTop="5sp"
+             android:layout_gravity="bottom|center"
+             android:max="9"
+             android:id="@+id/seek_settings"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"/>
+
+
+</LinearLayout>

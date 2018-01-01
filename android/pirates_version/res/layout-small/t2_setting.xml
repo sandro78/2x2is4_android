@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:gravity="top"
+              android:layout_gravity="top|center_horizontal"
+              android:id="@+id/t2_settings"
+        >
+    <TableLayout android:layout_width="fill_parent"
+                 android:gravity="top"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/setting_t2_table"
+                 android:layout_height="fill_parent">
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1">
+            <TextView style="@style/learn_table.header.settings.s"
+                      android:text="@string/header2"
+                      android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal"
+                  android:padding="2dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x1"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x5"
+                    android:id="@+id/s2"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x9"
+                    android:id="@+id/s6"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal"
+                  android:padding="2dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x2"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x6"
+                    android:id="@+id/s3"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x10"
+                    android:id="@+id/s7"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal"
+                  android:padding="2dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x3"
+                    android:id="@+id/s0"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x7"
+                    android:id="@+id/s4"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x11"
+                    android:id="@+id/s8"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal"
+                  android:padding="2dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x4"
+                    android:id="@+id/s1"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x8"
+                    android:id="@+id/s5"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewSettingsExt
+                    style="@style/learn_table.settings.s"
+                    android:text="@string/b2x12"
+                    android:id="@+id/s9"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal"
+                  android:padding="10dp">
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

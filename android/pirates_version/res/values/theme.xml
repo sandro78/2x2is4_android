@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.Splash" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/splash_screen_landscape</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+</resources>

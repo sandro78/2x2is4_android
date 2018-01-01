@@ -1,0 +1,260 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+    }
+}
+
+
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        versionCode 10
+        versionName "1.7"
+        minSdkVersion 15
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            sourceSets {
+                main {
+                    manifest.srcFile 'AndroidManifest.xml'
+                    java.srcDirs = ['src']
+                    resources.srcDirs = ['src']
+                    aidl.srcDirs = ['aidl']
+                    renderscript.srcDirs = ['src']
+                    res.srcDirs = ['res']
+                    assets.srcDirs = ['assets']
+                }
+            }
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+dependencies {
+}
+
+task cleanResources(type: Delete) {
+    delete fileTree(dir: "assets/anim", includes: ['**/**'])
+    delete fileTree(dir: "assets/img", includes: ['**/**'])
+    delete fileTree(dir: "res/drawable", includes: ['**/**'])
+    delete fileTree(dir: "res/raw", includes: ['**/*.mp3', '**/*.wav'])
+    delete fileTree(dir: "res/drawable-ldpi", includes: ["**/**"])
+    delete fileTree(dir: "res/drawable-hdpi", includes: ["**/**"])
+    delete fileTree(dir: "res/drawable-xhdpi", includes: ["**/**"])
+}
+
+task copyResources {
+
+    copy {
+        from "../../common/resources/pirates_version/animation"
+        into "assets/anim"
+        include "**/*_crash_anim*.*"
+        include "**/*pirate_canon_anim*.*"
+        include "**/*pirate_won_anim*.*"
+        include "**/*pirate_loose_anim*.*"
+        include "**/*our_ship_anim*.*"
+        include "**/*pirate_ship_anim*.*"
+        include "**/*sea_anim*.*"
+        include "**/*sun_anim*.*"
+        include "**/*our_shot_smoke_anim*.*"
+        include "**/*pirate_shot_smoke_anim*.*"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/common_images"
+        into "assets/img"
+        include "**/background_small.png"
+        include "**/buy_button.png"
+        include "**/buy_button_pressed.png"
+        include "**/button.png"
+        include "**/button_selected.png"
+        include "**/common_background.jpg"
+        include "**/game_settings_box.png"
+        include "**/game_settings_empty.png"
+        include "**/learn_bg_landscape.jpg"
+        include "**/results_bg_landscape.png"
+        include "**/settings_fone_landscape.png"
+        include "**/transparent.png"
+        include "**/stopwatch.png"
+        include "**/delete.png"
+        include "**/delete_pressed.png"
+        include "**/banner_android.png"
+        include "**/banner_android_small.png"
+        include "**/down*.*"
+        include "**/left*.*"
+        include "**/up*.*"
+        include "**/right*.*"
+        include "**/history_bg*.*"
+        include "**/learn_bg_portrait*.*"
+        include "**/common_background_portrait*.*"
+        include "**/odnoklassniki*.*"
+        include "**/learn_bg_portrait*.*"
+        include "**/v_kontakte*.*"
+        include "**/learn_bg_small*.*"
+        include "**/cup*.*"
+        include "**/roger_won*.*"
+        include "**/roger_loose*.*"
+        include "**/start*.*"
+        include "**/cancel*.*"
+        include "**/pause*.*"
+        include "**/help*.*"
+        include "**/finish*.*"
+        include "**/restart*.*"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/animation"
+        into "assets/img"
+        include "**/bomb.png"
+        include "**/bomb_pressed.png"
+        include "**/background.png"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/animation"
+        into "res/drawable"
+        exclude "**/*_crash_anim*.*"
+        exclude "**/*background.png*"
+        exclude "*bomb.png*"
+        exclude "**/*bomb_pressed.png*"
+        exclude "**/*pirate_won_anim*.*"
+        exclude "**/*pirate_loose_anim*.*"
+        exclude "**/*our_ship_anim*.*"
+        exclude "**/*pirate_ship_anim*.*"
+        exclude "**/*sea_anim*.*"
+        exclude "**/*sun_anim*.*"
+        exclude "**/*our_shot_smoke_anim*.*"
+        exclude "**/*pirate_shot_smoke_anim*.*"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/animation"
+        into "res/drawable"
+        include "**/our_canon_anim0.png"
+        include "**/pirate_canon_anim0.png"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/common_images"
+        into "res/drawable"
+        exclude "**/*background_small.png"
+        exclude "**/*button.png"
+        exclude "**/*button_selected.png"
+        exclude "**/*button_pressed.png"
+        exclude "**/common_background.jpg"
+        exclude "**/game_settings_box.png"
+        exclude "**/game_settings_empty.png"
+        exclude "**/learn_bg_landscape.jpg"
+        exclude "**/show_results_bg.png"
+        exclude "**/settings_bg_landscape.jpg"
+        exclude "**/settings_bg_portrait.jpg"
+        exclude "**/show_results_bg_portrait.png"
+        exclude "**/settings_bg_landscape.jpg"
+        exclude "**/settings_bg_portrait.jpg"
+        exclude "**/down*.*"
+        exclude "**/left*.*"
+        exclude "**/up*.*"
+        exclude "**/right*.*"
+        exclude "**/settings_fone_landscape*.*"
+        exclude "**/game_settings_bg*.*"
+        exclude "**/game_settings_bg_portrait*.*"
+        exclude "**/history_bg*.*"
+        exclude "**/learn_bg_portrait*.*"
+        exclude "**/common_background_portrait*.*"
+        exclude "**/splash_screen_landscape*.*"
+        exclude "**/odnoklassniki*.*"
+        exclude "**/learn_bg_portrait*.*"
+        exclude "**/v_kontakte*.*"
+        exclude "**/learn_bg_small*.*"
+        exclude "**/backspace*.*"
+        exclude "**/keys_mode*.*"
+        exclude "**/variants_mode*.*"
+        exclude "**/cup*.*"
+        exclude "**/roger_won*.*"
+        exclude "**/roger_loose*.*"
+        exclude "**/start*.*"
+        exclude "**/cancel*.*"
+        exclude "**/pause*.*"
+        exclude "**/help*.*"
+        exclude "**/finish*.*"
+        exclude "**/restart*.*"
+        exclude "**/loadimage_*.*"
+        exclude "**/banner_android.png"
+        exclude "**/banner_android_small.png"
+    }
+
+    copy {
+        into "res/raw"
+        from "../../common/resources/pirates_version/audio_data"
+        include "**/*.*"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/common_images/loadimage_426x320.jpg"
+        into "res/drawable-ldpi/"
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/common_images/loadimage_470x320.jpg"
+        into "res/drawable/"
+        rename("loadimage_470x320.jpg", "splash_screen_landscape.jpg")
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/common_images/loadimage_640x480.jpg"
+        into "res/drawable-hdpi/"
+        rename("loadimage_640x480.jpg", "splash_screen_landscape.jpg")
+    }
+
+    copy {
+        from "../../common/resources/pirates_version/common_images/loadimage_960x720.jpg"
+        into "res/drawable-xhdpi/"
+        rename("loadimage_960x720.jpg", "splash_screen_landscape.jpg")
+    }
+
+    copy {
+        from file("../../common/resources/pirates_version/common_images/icon.png")
+        into "res/drawable-hdpi"
+    }
+
+    copy {
+        from file("../../common/resources/pirates_version/common_images/icon.png")
+        into "res/drawable-xhdpi"
+    }
+
+    copy {
+        from file("../../common/resources/pirates_version/common_images/icon.png")
+        into "res/drawable-ldpi"
+    }
+
+    doLast {
+        file("res/drawable-ldpi/loadimage_426x320.jpg").renameTo(file("res/drawable-ldpi/splash_screen_landscape.jpg"))
+        file("res/drawable-hdpi/loadimage_640x480.jpg").renameTo(file("res/drawable-hdpi/splash_screen_landscape.jpg"))
+        file("res/drawable/loadimage_470x320.jpg").renameTo(file("res/drawable/splash_screen_landscape.jpg"))
+        file("res/drawable-xhdpi/loadimage_960x720.jpg").renameTo(file("res/drawable-xhdpi/splash_screen_landscape.jpg"))
+    }
+}

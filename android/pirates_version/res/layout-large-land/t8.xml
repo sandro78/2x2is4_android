@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center_horizontal"
+              android:layout_gravity="center_horizontal"
+
+              android:padding="0dp"
+        android:id="@+id/t8"
+        >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:gravity="top"
+        android:layout_gravity="center_horizontal"
+
+        android:padding="0dp"
+                 android:layout_height="fill_parent">
+<!--        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal"
+                  android:padding="0dp"
+                  android:layout_weight="1">
+            <TextView/>
+        </TableRow>-->
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:padding="0dp">
+            <TextView style="@style/learn_table.header.l"
+                      android:text="@string/header8"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:padding="0dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x1"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x5"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x9"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:padding="0dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    style="@style/learn_table.l"
+                    android:padding="0dp"
+                    android:text="@string/b8x2"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x6"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x10"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:padding="0dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x3"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x7"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x11"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:padding="0dp">
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x4"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:text="@string/b8x8"/>
+            <com.oktogames.app_2x2is4.light.android.widget.TextViewExt
+                    android:padding="0dp"
+                    style="@style/learn_table.l"
+                    android:paddingBottom="2dp"
+                    android:text="@string/b8x12"/>
+        </TableRow>
+        <!--<TableRow android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:padding="0dp">
+
+        </TableRow>-->
+    </TableLayout>
+</LinearLayout>

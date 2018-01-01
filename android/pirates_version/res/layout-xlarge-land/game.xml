@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- todo check style-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/game_main_layout"
+                android:gravity="center">
+    <!--Top Button Panel-->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/header_game"
+                    android:background="@drawable/navigation_bar_bg">
+        <Button android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bomb_top"
+                android:textColor="@color/white"
+                android:textSize="54dp"
+                android:padding="6dp"
+                android:paddingLeft="8dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/combination_count"
+                  android:textColor="@color/white"
+                  android:textSize="34dp"
+                  android:text="20"
+                  android:paddingRight="2dp"
+                  android:paddingLeft="8dp"
+                  android:layout_toRightOf="@id/bomb_top"
+                  android:layout_centerVertical="true"/>
+        <Button android:layout_width="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/sound"
+                android:checked="true"
+                android:background="@drawable/sound_on"
+                android:textColor="@color/white"
+                android:textSize="54dp"
+                android:padding="6dp"
+                android:paddingLeft="8dp"
+                android:layout_height="60dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/timer"
+                  android:textColor="@color/white"
+                  android:textSize="34dp"
+                  android:text="00:00:00"
+                  android:paddingRight="2dp"
+                  android:gravity="center_horizontal"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:paddingLeft="8dp"/>
+    </RelativeLayout>
+    <!--Sun-->
+    <ImageView android:layout_width="114dp"
+               android:layout_height="106dp"
+               android:id="@+id/sun"
+               android:padding="8sp"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/header_game"
+            />
+    <!--Answer text-->
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="2:2=1"
+              android:textColor="@color/black"
+              android:textSize="104dp"
+              android:textStyle="bold"
+              android:paddingTop="4dp"
+              android:id="@+id/answer_id"
+              android:layout_centerHorizontal="true"
+              android:visibility="invisible"
+              android:layout_below="@id/sun"/>
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="244dp"
+                    android:scaleType="fitEnd"
+                    android:id="@+id/bottom_field"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true">
+        <TableLayout android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:padding="8dp"
+                     android:id="@+id/bomb_layout"
+                     android:gravity="center">
+            <TableRow android:gravity="center"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:padding="10dp">
+                <!--Choose answer buttons-->
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="fill_parent">
+                    <Button android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:padding="8dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:text="1"
+                            android:textSize="30dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:id="@+id/choose1"/>
+                    <TextView android:layout_width="60dp"
+                              android:layout_height="80dp"/>
+                    <Button android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:padding="8dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:text="2"
+                            android:textSize="30dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:id="@+id/choose2"/>
+                    <TextView android:layout_width="60dp"
+                              android:layout_height="80dp"/>
+                    <Button android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:padding="8dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:text="3"
+                            android:textSize="30dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:id="@+id/choose3"/>
+                    <TextView android:layout_width="60dp"
+                              android:layout_height="80dp"/>
+                    <Button android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:padding="8dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:text="4"
+                            android:textSize="30dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:id="@+id/choose4"/>
+                    <TextView android:layout_width="60dp"
+                              android:layout_height="80dp"/>
+                    <Button android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:padding="8dp"
+                            android:paddingRight="16dp"
+                            android:paddingLeft="16dp"
+                            android:text="5"
+                            android:textSize="30dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            android:id="@+id/choose5"/>
+                </LinearLayout>
+            </TableRow>
+            <!--Control button-->
+            <TableRow android:gravity="center" android:padding="10dp"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="fill_parent"
+                              android:gravity="center"
+                              android:layout_weight="1">
+                    <!--Pause -->
+                    <Button android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/pause"
+                            />
+                    <TextView android:layout_width="100dp"
+                              android:layout_height="80dp"/>
+                    <!--Help -->
+                    <Button android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/help"
+                            />
+                    <TextView android:layout_width="100dp"
+                              android:layout_height="80dp"/>
+                    <!--Finish -->
+                    <Button android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/finish"
+                            />
+                    <TextView android:layout_width="100dp"
+                              android:layout_height="80dp"/>
+                    <!--Restart -->
+                    <Button android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/restart"
+                            />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+    </RelativeLayout>
+    <!--Our Ship-->
+    <ImageView android:layout_width="190dp"
+               android:layout_height="240dp"
+               android:id="@+id/our_ship"
+               android:layout_above="@id/bottom_field"
+            />
+    <!--Pirate Ship-->
+    <ImageView android:layout_width="280dp"
+               android:layout_height="160dp"
+               android:id="@+id/pirate_ship"
+               android:layout_above="@id/bottom_field"
+               android:layout_alignParentRight="true"
+            />
+    <!--Sea-->
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="86dp"
+               android:id="@+id/sea"
+               android:layout_above="@id/bottom_field"
+            />
+    <!--Our cannon-->
+    <ImageView android:layout_width="180dp"
+               android:layout_height="260dp"
+               android:id="@+id/our_cannon"
+               android:layout_below="@id/header_game"
+               android:src="@drawable/our_canon_anim0"
+               android:paddingLeft="80dp"
+               android:paddingTop="220dp"
+            />
+    <!--Our hearts-->
+    <ImageView android:layout_width="90dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart1"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:paddingLeft="40dp"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart2"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart1"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart3"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart2"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart4"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart3"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart5"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart4"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart6"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart5"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart7"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart6"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart8"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart7"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart9"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart8"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart10"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart9"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart11"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart10"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/our_heart12"
+               android:src="@drawable/heart_good"
+               android:layout_below="@id/our_cannon"
+               android:layout_toRightOf="@id/our_heart11"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <!--Our shot-->
+    <ImageView android:layout_width="318dp"
+               android:layout_height="65dp"
+               android:id="@+id/our_shot"
+               android:layout_below="@id/our_cannon"
+               android:paddingLeft="172dp"
+            />
+    <!--Pirate cannon-->
+    <ImageView android:layout_width="180dp"
+               android:layout_height="260dp"
+               android:id="@+id/pirate_cannon"
+               android:layout_below="@id/header_game"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/pirate_canon_anim0"
+               android:paddingRight="80dp"
+               android:paddingTop="220dp"
+            />
+    <!--Pirate hearts-->
+    <ImageView android:layout_width="90dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart1"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:paddingRight="42dp"
+               android:layout_alignParentRight="true"
+               android:visibility="invisible"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart2"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart1"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart3"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart2"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart4"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart3"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart5"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart4"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart6"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart5"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart7"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart6"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart8"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart7"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart9"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart8"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart10"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart9"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart11"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart10"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <ImageView android:layout_width="14dp"
+               android:layout_height="28dp"
+               android:id="@+id/pirate_heart12"
+               android:src="@drawable/heart_pirate"
+               android:layout_below="@id/pirate_cannon"
+               android:layout_toLeftOf="@id/pirate_heart11"
+               android:visibility="invisible"
+               android:paddingRight="2dp"
+            />
+    <!--Pirate shot-->
+    <ImageView android:layout_width="390dp"
+               android:layout_height="70dp"
+               android:id="@+id/pirate_shot"
+               android:layout_below="@id/pirate_cannon"
+               android:paddingRight="244dp"
+               android:layout_alignParentRight="true"
+            />
+
+    <!--Result View-->
+    <RelativeLayout android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/result_id"
+                    android:visibility="gone">
+		<RelativeLayout android:layout_height="fill_parent"
+						android:layout_width="fill_parent"
+						android:layout_marginBottom="160dp"
+						android:layout_marginTop="80dp"
+						android:layout_marginLeft="80dp"
+						android:layout_marginRight="80dp"
+						android:id="@+id/result_view_id">
+			<ImageView android:layout_height="110dp"
+					   android:layout_width="130dp"
+					   android:paddingTop="30dp"
+					   android:paddingLeft="30dp"
+					   android:id="@+id/result_cup"/>
+
+			<TableLayout android:layout_height="fill_parent"
+						 android:layout_width="fill_parent"
+						 android:paddingTop="60dp"
+						 android:gravity="center_horizontal">
+				<TableRow android:gravity="center">
+
+					<ImageView android:layout_height="80dp"
+							   android:layout_width="80dp"
+							   android:src="@drawable/stopwatch"
+							   android:id="@+id/stopwatch"/>
+					<TextView android:layout_height="wrap_content"
+							  android:layout_width="wrap_content"
+							  android:text="xlarge"
+							  android:textSize="50sp"
+							  android:paddingLeft="20dp"
+							  android:gravity="left"
+							  android:id="@+id/timer_result"
+							  android:textColor="@color/white"/>
+				</TableRow>
+				<TableRow android:gravity="center">
+					<ImageView android:layout_height="70dp"
+							   android:layout_width="70dp"
+							   android:id="@+id/help2"/>
+					<TextView android:layout_height="wrap_content"
+							  android:layout_width="wrap_content"
+							  android:text="00"
+							  android:textSize="50sp"
+							  android:paddingLeft="20dp"
+							  android:gravity="left"
+							  android:id="@+id/helps_count"
+							  android:textColor="@color/white"/>
+
+				</TableRow>
+                <TableRow android:gravity="center">
+                    <Button android:layout_width="280dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/buy_button"
+                            android:textColor="@color/white"
+                            android:textSize="54sp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textStyle="bold"
+                            android:text="@string/full_version_button_text"
+                    />
+                    <Button android:layout_width="280dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/premium_button"
+                            android:textColor="@color/white"
+                            android:textSize="54sp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:textStyle="bold"
+                            android:text="@string/premium_game_button_text"
+                    />
+                </TableRow>
+			</TableLayout>
+			<!--Finish Result View-->
+			<ImageView android:layout_height="110dp"
+					   android:layout_width="110dp"
+					   android:scaleType="fitXY"
+					   android:paddingBottom="30dp"
+					   android:paddingLeft="30dp"
+					   android:layout_alignParentLeft="true"
+					   android:layout_alignParentBottom="true"
+					   android:id="@+id/result_finish"/>
+			<!--Roger Image-->
+			<ImageView android:layout_height="140dp"
+					   android:layout_width="120dp"
+					   android:paddingBottom="40dp"
+					   android:layout_alignParentBottom="true"
+					   android:layout_centerHorizontal="true"
+					   android:id="@+id/roger"/>
+			<!--Reload Result View-->
+			<ImageView android:layout_height="110dp"
+					   android:layout_width="110dp"
+					   android:scaleType="fitXY"
+					   android:paddingBottom="30dp"
+					   android:paddingRight="30dp"
+					   android:layout_alignParentRight="true"
+					   android:layout_alignParentBottom="true"
+					   android:id="@+id/result_reload"/>
+
+		</RelativeLayout>
+    </RelativeLayout>
+
+    <!--Settings View-->
+    <RelativeLayout android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/settings_id"
+                    android:visibility="visible">
+        <RelativeLayout android:layout_height="400dp"
+                        android:layout_width="540dp"
+                        android:id="@+id/settings_view_id">
+            <TableLayout android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center">
+                <TableRow>
+                    <TextView android:layout_height="80dp"/>
+                </TableRow>
+                <TableRow android:gravity="center">
+                    <LinearLayout>
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="80dp"
+                               android:id="@+id/settings_multiplication"
+                               android:src="@drawable/multiplication"/>
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="4dp"
+                            />
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="80dp"
+                               android:id="@+id/settings_division"
+                               android:src="@drawable/division"/>
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="40dp"
+                            />
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="80dp"
+                               android:id="@+id/settings_easy"
+                               android:src="@drawable/easy_level"/>
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="4dp"
+                            />
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="80dp"
+                               android:id="@+id/settings_medium"
+                               android:src="@drawable/medium_level"/>
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="4dp"
+                            />
+                    <ImageView android:layout_height="80dp"
+                               android:layout_width="80dp"
+                               android:id="@+id/settings_hard"
+                               android:src="@drawable/hard_level"/>
+                    />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow>
+                    <TextView/>
+                </TableRow>
+                <TableRow android:gravity="center"
+                          android:layout_width="fill_parent">
+                    <LinearLayout android:layout_width="fill_parent"
+                                  android:gravity="left"
+                                  android:layout_height="wrap_content">
+                        <SeekBar android:layout_width="340dp"
+                                 android:layout_height="wrap_content"
+                                 android:max="10"
+                                 android:paddingLeft="20dp"
+                                 android:paddingRight="20dp"
+                                 android:layout_gravity="center"
+                                 android:id="@+id/settings_seek_number"/>
+                        <TextView android:layout_width="75dp"
+                                  android:layout_height="wrap_content"
+                                  android:text="12"
+                                  android:paddingLeft="14dp"
+                                  android:gravity="left"
+                                  android:textColor="@color/white"
+                                  android:textSize="50dp"
+                                  android:id="@+id/settings_number"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <!--Settings cancel button-->
+            <ImageView android:layout_height="100dp"
+                       android:layout_width="100dp"
+                       android:paddingBottom="12dp"
+                       android:layout_alignParentBottom="true"
+                       android:id="@+id/settings_cancel"/>
+            <!--Settings game button-->
+            <ImageView android:layout_height="120dp"
+                       android:layout_width="120dp"
+                       android:id="@+id/settings_start_game"
+                       android:layout_alignParentBottom="true"
+                       android:layout_alignParentRight="true"
+                       android:padding="12dp"/>
+            </RelativeLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                android:layout_marginLeft="560dp"
+                android:layout_marginTop="0dp">
+            <include layout="@layout/t2" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="560dp"
+                        android:layout_marginTop="0dp">
+            <include layout="@layout/v2" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="570dp"
+                        android:layout_marginTop="20dp">
+            <include layout="@layout/t3" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="570dp"
+                        android:layout_marginTop="20dp">
+            <include layout="@layout/v3" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="580dp"
+                        android:layout_marginTop="40dp">
+            <include layout="@layout/t4" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="580dp"
+                        android:layout_marginTop="40dp">
+            <include layout="@layout/v4" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="590dp"
+                        android:layout_marginTop="60dp">
+            <include layout="@layout/t5" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="590dp"
+                        android:layout_marginTop="60dp">
+            <include layout="@layout/v5" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="600dp"
+                        android:layout_marginTop="80dp">
+            <include layout="@layout/t6" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="600dp"
+                        android:layout_marginTop="80dp">
+            <include layout="@layout/v6" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="610dp"
+                        android:layout_marginTop="100dp">
+            <include layout="@layout/t7" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="610dp"
+                        android:layout_marginTop="100dp">
+            <include layout="@layout/v7" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="620dp"
+                        android:layout_marginTop="120dp">
+            <include layout="@layout/t8" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="620dp"
+                        android:layout_marginTop="120dp">
+            <include layout="@layout/v8" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="630dp"
+                        android:layout_marginTop="140dp">
+            <include layout="@layout/t9" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="630dp"
+                        android:layout_marginTop="140dp">
+            <include layout="@layout/v9" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="640dp"
+                        android:layout_marginTop="160dp">
+            <include layout="@layout/t10" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="640dp"
+                        android:layout_marginTop="160dp">
+            <include layout="@layout/v10" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="650dp"
+                        android:layout_marginTop="180dp">
+            <include layout="@layout/t11" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="650dp"
+                        android:layout_marginTop="180dp">
+            <include layout="@layout/v11" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="660dp"
+                        android:layout_marginTop="200dp">
+            <include layout="@layout/t12" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="660dp"
+                        android:layout_marginTop="200dp">
+            <include layout="@layout/v12" android:layout_weight="1"
+                     android:layout_width="120dp"
+                     android:layout_height="70dp"/>
+        </AbsoluteLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:id="@+id/animation_ball"
+               android:visibility="invisible"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+assets/anim/
+assets/img/
+proguard-project.txt
+project.properties
+res/drawable-hdpi/
+res/drawable-ldpi/
+res/drawable-xhdpi/
+res/drawable/
+res/raw/
+test/build.xml
+test/local.properties
+test/proguard-project.txt
+test/project.properties

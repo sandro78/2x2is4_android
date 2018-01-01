@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+    <string name="won_message_to_social_network">%1$sНаучил пирата %2$s до %3$u и пустил его судно ко дну в %4$s на %5$s сложности за %6$s. Побьешь мой рекорд?</string>
+    <string name="loose_message_to_social_network">%1$sПират потопил меня в %2$s! Отомсти!</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="cancel">Отмена</string>
+    <string name="continued">Продолжить</string>
+    <string name="division">делению</string>
+    <string name="easy">минимальной</string>
+    <string name="finish">Завершить игру</string>
+    <string name="hard">максимальной</string>
+    <string name="history">История</string>
+    <string name="learn">Учить</string>
+    <string name="medium">средней</string>
+    <string name="multiplication">умножению</string>
+    <string name="pause">Пауза</string>
+    <string name="play">Играть</string>
+    <string name="remember">Запомни</string>
+    <string name="restart">Рестарт игры</string>
+    <string name="unknown">неизвестном</string>
+    <string name="yes">Да</string>
+    <string name="low_memory_message">Недостаточно памяти на Вашем устройстве. Игра будет продолжена без анимации. Попробуйте освободить память на устройстве и рестартовать игру из главного меню</string>
+    <string name="low_memory">Недостаточно памяти</string>
+    <string name="rate_message">Вам нравится это приложение? Пожалуйста, оцените его или напишите свое ревью. Ваше мнение очень важно для нас.</string>
+    <string name="later">Позже</string>
+    <string name="rate_it">Оценить</string>
+    <string name="never">Никогда</string>
+    <string name="settings">Настройки</string>
+    <string name="division_promo">Режим деления доступен только в PRO версии приложения</string>
+    <string name="times_promo">Таблицы умножения 12х12 доступны только в PRO версии приложения</string>
+    <string name="buy">Купить</string>
+    <string name="no_AD">Рекламы нет</string>
+    <string name="no_AD_explanation">Извините, на текущий момент нет доступной рекламы. Пожалуйста, проверьте соединение с Интернет и попробуйте снова.</string>
+    <string name="premium_game_title">Призовая игра</string>
+    <string name="premium_game_explanation">Вы получили призовую игру до числа %d! Повторите процедуру, чтобы получить следующий уровень призовой игры.</string>
+    <string name="premium_game_button_text">Призовая\nигра</string>
+    <string name="full_version_explanation">Полная версия не содержит рекламы и позволяет изучать таблицу умножения 12x12.</string>
+    <string name="full_version_button_text">Полная версия</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/learnRelativeLayout"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="fill_parent"
+        >
+
+<!--Learn table with scroll-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:id="@+id/table_row">
+        <!--<include layout="@layout/t2"/>-->
+
+
+    </LinearLayout>
+
+<!--Informative buttons-->
+    <TableLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true">
+        <TableRow>
+            <ImageView style="@style/learn_control_btn"/>
+            <ImageView style="@style/learn_control_btn"
+                       android:id="@+id/up_btn"/>
+            <ImageView/>
+        </TableRow>
+        <TableRow>
+            <ImageView style="@style/learn_control_btn"
+                       android:id="@+id/left_btn"/>
+            <ImageView style="@style/learn_control_btn"/>
+            <ImageView style="@style/learn_control_btn"
+                       android:id="@+id/right_btn"/>
+        </TableRow>
+        <TableRow>
+            <ImageView style="@style/learn_control_btn"/>
+            <ImageView style="@style/learn_control_btn"
+                       android:id="@+id/down_btn"/>
+            <ImageView style="@style/learn_control_btn"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

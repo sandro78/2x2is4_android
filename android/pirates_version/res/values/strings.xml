@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2x2=4</string>
+
+    <string name="won_message_to_social_network">%1$sI have taught pirate %2$s until %3$u and destroyed his ship on %4$ on %5$ level with %6$. Can you?</string>
+    <string name="loose_message_to_social_network">%1$sThe pirate destroyed me with %2$s! Avenge me!</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="cancel">Cancel</string>
+    <string name="continued">Continue</string>
+    <string name="division">Division</string>
+    <string name="easy">Easy</string>
+    <string name="finish">Finish game</string>
+    <string name="hard">Hard</string>
+    <string name="history">History</string>
+    <string name="learn">Learn</string>
+    <string name="medium">Medium</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="remember">Remember</string>
+    <string name="restart">Restart game</string>
+    <string name="unknown">Unknown</string>
+    <string name="yes">Yes</string>
+    <string name="low_memory_message">Insufficient memory on your device. Game will continue without animation. For a better experience try to free up some memory and restart the game from the main menu</string>
+    <string name="low_memory">Low memory</string>
+    <string name="rate_message">Do you like this app? Please rate it of write a review. Your opinion is very important for us.</string>
+    <string name="later">Later</string>
+    <string name="rate_it">Rate it</string>
+    <string name="never">Never</string>
+    <string name="settings">Settings</string>
+    <string name="division_promo">Division mode is available just at PRO version</string>
+    <string name="times_promo">Times tables 12x12 are available just at PRO version</string>
+    <string name="buy">Buy</string>
+    <string name="no_AD">No AD</string>
+    <string name="no_AD_explanation">Sorry no ADs to watch on the moment. Please check your Internet connectivity and try again later.</string>
+    <string name="premium_game_title">Premium game</string>
+    <string name="premium_game_explanation">You\'ve got a chance to play premium game till %d number! Repeat procedure in order to get next level of premium game.</string>
+    <string name="premium_game_button_text">Premium\ngame</string>
+    <string name="full_version_explanation">The full version is ad-free and allows you to learn the multiplication table of 12 by 12.</string>
+    <string name="full_version_button_text">Buy full\nversion</string>
+
+
+    <string name="header2">2</string>
+    <string name="header3">3</string>
+    <string name="header4">4</string>
+    <string name="header5">5</string>
+    <string name="header6">6</string>
+    <string name="header7">7</string>
+    <string name="header8">8</string>
+    <string name="header9">9</string>
+    <string name="header10">10</string>
+    <string name="header11">11</string>
+    <string name="header12">12</string>
+
+    <string name="b2x1">2x1=2</string>
+    <string name="b2x2">2x2=4</string>
+    <string name="b2x3">2x3=6</string>
+    <string name="b2x4">2x4=8</string>
+    <string name="b2x5">2x5=10</string>
+    <string name="b2x6">2x6=12</string>
+    <string name="b2x7">2x7=14</string>
+    <string name="b2x8">2x8=16</string>
+    <string name="b2x9">2x9=18</string>
+    <string name="b2x10">2x10=20</string>
+    <string name="b2x11">2x11=22</string>
+    <string name="b2x12">2x12=24</string>
+
+    <string name="b3x1">3x1=3</string>
+    <string name="b3x2">3x2=6</string>
+    <string name="b3x3">3x3=9</string>
+    <string name="b3x4">3x4=12</string>
+    <string name="b3x5">3x5=15</string>
+    <string name="b3x6">3x6=18</string>
+    <string name="b3x7">3x7=21</string>
+    <string name="b3x8">3x8=24</string>
+    <string name="b3x9">3x9=27</string>
+    <string name="b3x10">3x10=30</string>
+    <string name="b3x11">3x11=33</string>
+    <string name="b3x12">3x12=36</string>
+
+    <string name="b4x1">4x1=4</string>
+    <string name="b4x2">4x2=8</string>
+    <string name="b4x3">4x3=12</string>
+    <string name="b4x4">4x4=16</string>
+    <string name="b4x5">4x5=20</string>
+    <string name="b4x6">4x6=24</string>
+    <string name="b4x7">4x7=28</string>
+    <string name="b4x8">4x8=32</string>
+    <string name="b4x9">4x9=36</string>
+    <string name="b4x10">4x10=40</string>
+    <string name="b4x11">4x11=44</string>
+    <string name="b4x12">4x12=48</string>
+
+    <string name="b5x1">5x1=5</string>
+    <string name="b5x2">5x2=10</string>
+    <string name="b5x3">5x3=15</string>
+    <string name="b5x4">5x4=20</string>
+    <string name="b5x5">5x5=25</string>
+    <string name="b5x6">5x6=30</string>
+    <string name="b5x7">5x7=35</string>
+    <string name="b5x8">5x8=40</string>
+    <string name="b5x9">5x9=45</string>
+    <string name="b5x10">5x10=50</string>
+    <string name="b5x11">5x11=55</string>
+    <string name="b5x12">5x12=60</string>
+
+    <string name="b6x1">6x1=6</string>
+    <string name="b6x2">6x2=12</string>
+    <string name="b6x3">6x3=18</string>
+    <string name="b6x4">6x4=24</string>
+    <string name="b6x5">6x5=30</string>
+    <string name="b6x6">6x6=36</string>
+    <string name="b6x7">6x7=42</string>
+    <string name="b6x8">6x8=48</string>
+    <string name="b6x9">6x9=54</string>
+    <string name="b6x10">6x10=60</string>
+    <string name="b6x11">6x11=66</string>
+    <string name="b6x12">6x12=72</string>
+
+    <string name="b7x1">7x1=7</string>
+    <string name="b7x2">7x2=14</string>
+    <string name="b7x3">7x3=21</string>
+    <string name="b7x4">7x4=28</string>
+    <string name="b7x5">7x5=35</string>
+    <string name="b7x6">7x6=43</string>
+    <string name="b7x7">7x7=49</string>
+    <string name="b7x8">7x8=56</string>
+    <string name="b7x9">7x9=63</string>
+    <string name="b7x10">7x10=70</string>
+    <string name="b7x11">7x11=77</string>
+    <string name="b7x12">7x12=84</string>
+
+    <string name="b8x1">8x1=8</string>
+    <string name="b8x2">8x2=16</string>
+    <string name="b8x3">8x3=24</string>
+    <string name="b8x4">8x4=32</string>
+    <string name="b8x5">8x5=40</string>
+    <string name="b8x6">8x6=48</string>
+    <string name="b8x7">8x7=56</string>
+    <string name="b8x8">8x8=64</string>
+    <string name="b8x9">8x9=72</string>
+    <string name="b8x10">8x10=80</string>
+    <string name="b8x11">8x11=88</string>
+    <string name="b8x12">8x12=96</string>
+
+    <string name="b9x1">9x1=9</string>
+    <string name="b9x2">9x2=18</string>
+    <string name="b9x3">9x3=27</string>
+    <string name="b9x4">9x4=36</string>
+    <string name="b9x5">9x5=45</string>
+    <string name="b9x6">9x6=54</string>
+    <string name="b9x7">9x7=63</string>
+    <string name="b9x8">9x8=72</string>
+    <string name="b9x9">9x9=81</string>
+    <string name="b9x10">9x10=90</string>
+    <string name="b9x11">9x11=99</string>
+    <string name="b9x12">9x12=108</string>
+
+    <string name="b10x1">10x1=10</string>
+    <string name="b10x2">10x2=20</string>
+    <string name="b10x3">10x3=30</string>
+    <string name="b10x4">10x4=40</string>
+    <string name="b10x5">10x5=50</string>
+    <string name="b10x6">10x6=60</string>
+    <string name="b10x7">10x7=70</string>
+    <string name="b10x8">10x8=80</string>
+    <string name="b10x9">10x9=90</string>
+    <string name="b10x10">10x10=100</string>
+    <string name="b10x11">10x11=110</string>
+    <string name="b10x12">10x12=120</string>
+
+    <string name="b11x1">11x1=11</string>
+    <string name="b11x2">11x2=22</string>
+    <string name="b11x3">11x3=33</string>
+    <string name="b11x4">11x4=44</string>
+    <string name="b11x5">11x5=55</string>
+    <string name="b11x6">11x6=66</string>
+    <string name="b11x7">11x7=77</string>
+    <string name="b11x8">11x8=88</string>
+    <string name="b11x9">11x9=99</string>
+    <string name="b11x10">11x10=110</string>
+    <string name="b11x11">11x11=121</string>
+    <string name="b11x12">11x12=132</string>
+
+    <string name="b12x1">12x1=12</string>
+    <string name="b12x2">12x2=24</string>
+    <string name="b12x3">12x3=35</string>
+    <string name="b12x4">12x4=48</string>
+    <string name="b12x5">12x5=60</string>
+    <string name="b12x6">12x6=72</string>
+    <string name="b12x7">12x7=84</string>
+    <string name="b12x8">12x8=96</string>
+    <string name="b12x9">12x9=108</string>
+    <string name="b12x10">12x10=120</string>
+    <string name="b12x11">12x11=132</string>
+    <string name="b12x12">12x12=144</string>
+
+    <string name="v2x1">2:2=1</string>
+    <string name="v2x2">4:2=2</string>
+    <string name="v2x3">6:2=3</string>
+    <string name="v2x4">8:2=4</string>
+    <string name="v2x5">10:2=5</string>
+    <string name="v2x6">12:2=6</string>
+    <string name="v2x7">14:2=7</string>
+    <string name="v2x8">16:2=8</string>
+    <string name="v2x9">18:2=9</string>
+    <string name="v2x10">20:2=10</string>
+    <string name="v2x11">22:2=11</string>
+    <string name="v2x12">24:2=12</string>
+
+    <string name="v3x1">3:3=1</string>
+    <string name="v3x2">6:3=2</string>
+    <string name="v3x3">9:3=3</string>
+    <string name="v3x4">12:3=4</string>
+    <string name="v3x5">15:3=5</string>
+    <string name="v3x6">18:3=6</string>
+    <string name="v3x7">21:3=7</string>
+    <string name="v3x8">24:3=8</string>
+    <string name="v3x9">27:3=9</string>
+    <string name="v3x10">30:3=10</string>
+    <string name="v3x11">33:3=11</string>
+    <string name="v3x12">36:3=12</string>
+
+    <string name="v4x1">4:4=1</string>
+    <string name="v4x2">8:4=2</string>
+    <string name="v4x3">12:4=3</string>
+    <string name="v4x4">16:4=4</string>
+    <string name="v4x5">20:4=5</string>
+    <string name="v4x6">24:4=6</string>
+    <string name="v4x7">28:4=7</string>
+    <string name="v4x8">32:4=8</string>
+    <string name="v4x9">36:4=9</string>
+    <string name="v4x10">40:4=10</string>
+    <string name="v4x11">44:4=11</string>
+    <string name="v4x12">48:4=12</string>
+
+    <string name="v5x1">5:5=1</string>
+    <string name="v5x2">10:5=2</string>
+    <string name="v5x3">15:5=3</string>
+    <string name="v5x4">20:5=4</string>
+    <string name="v5x5">25:5=5</string>
+    <string name="v5x6">30:5=6</string>
+    <string name="v5x7">35:5=7</string>
+    <string name="v5x8">40:5=8</string>
+    <string name="v5x9">45:5=9</string>
+    <string name="v5x10">50:5=10</string>
+    <string name="v5x11">55:5=11</string>
+    <string name="v5x12">60:5=12</string>
+
+    <string name="v6x1">6:6=1</string>
+    <string name="v6x2">12:6=2</string>
+    <string name="v6x3">18:6=3</string>
+    <string name="v6x4">24:6=4</string>
+    <string name="v6x5">30:6=5</string>
+    <string name="v6x6">36:6=6</string>
+    <string name="v6x7">42:6=7</string>
+    <string name="v6x8">48:6=8</string>
+    <string name="v6x9">54:6=9</string>
+    <string name="v6x10">60:6=10</string>
+    <string name="v6x11">66:6=11</string>
+    <string name="v6x12">72:6=12</string>
+
+    <string name="v7x1">7:7=1</string>
+    <string name="v7x2">14:7=2</string>
+    <string name="v7x3">21:7=3</string>
+    <string name="v7x4">28:7=4</string>
+    <string name="v7x5">35:7=5</string>
+    <string name="v7x6">43:7=6</string>
+    <string name="v7x7">49:7=7</string>
+    <string name="v7x8">56:7=8</string>
+    <string name="v7x9">63:7=9</string>
+    <string name="v7x10">70:7=10</string>
+    <string name="v7x11">77:7=11</string>
+    <string name="v7x12">84:7=12</string>
+
+    <string name="v8x1">8:8=1</string>
+    <string name="v8x2">16:8=2</string>
+    <string name="v8x3">24:8=3</string>
+    <string name="v8x4">32:8=4</string>
+    <string name="v8x5">40:8=5</string>
+    <string name="v8x6">48:8=6</string>
+    <string name="v8x7">56:8=7</string>
+    <string name="v8x8">64:8=8</string>
+    <string name="v8x9">72:8=9</string>
+    <string name="v8x10">80:8=10</string>
+    <string name="v8x11">88:8=11</string>
+    <string name="v8x12">96:8=12</string>
+
+    <string name="v9x1">9:9=1</string>
+    <string name="v9x2">18:9=2</string>
+    <string name="v9x3">27:9=3</string>
+    <string name="v9x4">36:9=4</string>
+    <string name="v9x5">45:9=5</string>
+    <string name="v9x6">54:9=6</string>
+    <string name="v9x7">63:9=7</string>
+    <string name="v9x8">72:9=8</string>
+    <string name="v9x9">81:9=9</string>
+    <string name="v9x10">90:9=10</string>
+    <string name="v9x11">99:9=11</string>
+    <string name="v9x12">108:9=12</string>
+
+    <string name="v10x1">10:10=1</string>
+    <string name="v10x2">20:10=2</string>
+    <string name="v10x3">30:10=3</string>
+    <string name="v10x4">40:10=4</string>
+    <string name="v10x5">50:10=5</string>
+    <string name="v10x6">60:10=6</string>
+    <string name="v10x7">70:10=7</string>
+    <string name="v10x8">80:10=8</string>
+    <string name="v10x9">90:10=9</string>
+    <string name="v10x10">100:10=10</string>
+    <string name="v10x11">110:10=11</string>
+    <string name="v10x12">120:10=12</string>
+
+    <string name="v11x1">11:11=1</string>
+    <string name="v11x2">22:11=2</string>
+    <string name="v11x3">33:11=3</string>
+    <string name="v11x4">44:11=4</string>
+    <string name="v11x5">55:11=5</string>
+    <string name="v11x6">66:11=6</string>
+    <string name="v11x7">77:11=7</string>
+    <string name="v11x8">88:11=8</string>
+    <string name="v11x9">99:11=9</string>
+    <string name="v11x10">110:11=10</string>
+    <string name="v11x11">121:11=11</string>
+    <string name="v11x12">132:11=12</string>
+
+    <string name="v12x1">12:12=1</string>
+    <string name="v12x2">24:12=2</string>
+    <string name="v12x3">35:12=3</string>
+    <string name="v12x4">48:12=4</string>
+    <string name="v12x5">60:12=5</string>
+    <string name="v12x6">72:12=6</string>
+    <string name="v12x7">84:12=7</string>
+    <string name="v12x8">96:12=8</string>
+    <string name="v12x9">108:12=9</string>
+    <string name="v12x10">120:12=10</string>
+    <string name="v12x11">132:12=11</string>
+    <string name="v12x12">144:12=12</string>
+    <string name="delete">Delete</string>
+</resources>
