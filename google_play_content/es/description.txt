@@ -1,0 +1,16 @@
+Hay un período en la vida del estudiante en el que uno tiene que aprender las tablas de multiplicar. Mi hijo no era una excepción, y no pudo evitar este destino.
+
+Comenzamos a estudiar las tablas de la misma forma de siempre: abrimos una libreta y comenzamos a aprender.
+Obviamente, esta forma de aprender es aburrida y ha quedado algo desfasada. Primero, requiere la paciencia de los padres; es difícil preguntarle a tu hijo las tablas varias veces al día. A veces, simplemente no hay tiempo. 
+A mí no me costó encontrar una solución al problema: decidí crear un profesor, que haría que aprender las tablas de multiplicar le resultara más interesante a un niño. El conjunto de opciones serán las bolas de cañón. El número de respuestas correctas será un disparo a un pirata. Si piensas durante demasiado tiempo, el pirata te disparará a ti. Aparentemente, frases como «Papá, hoy le he disparado a un pirata en el nivel difícil» son mejores que las aburridas «Hoy he llegado hasta la tabla del 5».
+
+Ventajas:
+- Dos tipos de operaciones aritméticas: multiplicación y división
+- Una tabla de multiplicación integrada para aprender
+- 3 niveles de dificultad (aumenta o disminuye la velocidad a la cual uno dispara al pirata)
+- Dos formas de introducir respuestas: mediante cifras o elección múltiple
+- Es posible guardar el historial de partidas jugadas anteriormente para seguir el progreso
+- Posibilidad de elegir el rango de ecuaciones utilizadas
+
+Licencia
+En la aplicación se han utilizado efectos de sonido de www.freesound.org según el sitio de licencia http://creativecommons.org/licenses/sampling+/1.0/ (Creative Commons Sampling Plus 1.0 License).

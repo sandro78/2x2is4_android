@@ -1,0 +1,16 @@
+Es gibt in der Schule einen Zeitraum, in dem jeder das Einmaleins lernen muss. Auch mein Sohn war da keine Ausnahme und konnte diesem Schicksal nicht entgehen.
+
+Wir begannen die Tabellen so zu lernen, wie es alle tun: wir schlugen ein Lehrbuch auf und starteten mit dem Lernen.
+Aber natürlich ist das eine langweilige Lernmethode, und lange schon nicht mehr modern. Vor allem ist wichtig, dass die Eltern Geduld mitbringen - es ist nicht einfach, das eigene Kind mehrmals am Tag auf Kenntnis des Einmaleins zu prüfen. Manchmal reicht auch einfach die Zeit dafür nicht. 
+Es war für mich nicht schwer, eine Lösung für das Problem zu finden: Ich beschloss, ein Lernprogramm zu schreiben, das es Kindern ermöglicht, das Einmaleins auf eine spannendere Art und Weise zu lernen. Deine Auswahl an Optionen sind die Kanonenkugeln. Die Menge Deiner richtigen Antworten bestimmt, wie oft Du auf den Piraten schießt. Wenn Du zu lange nachdenkst, schießt der Pirat auf Dich. Und der Satz „Papa, heute hab ich einen Piraten im schweren Level abgeschossen" ist viel besser als so etwas Langweiliges wie „Heute hab ich das kleine Einmaleins bis zur 5 gelernt” zu sagen.
+
+Vorteile:
+- Zwei verschiedene Rechenarten: Multiplikation und Division;
+- Eine eingebaute Multiplikationstabelle zum Lernen;
+- 3 Schwierigkeitsstufen (die Geschwindigkeit, mit der der Pirat beschossen wird, steigt oder fällt);
+- Zwei Möglichkeiten, Antworten einzugeben: entweder durch Zahlen oder durch Auswahlfragen;
+- Die bereits absolvierten Spiele können gespeichert werden, um zu sehen, wie weit du gekommen bist; und
+- Du kannst aus vielen Gleichungen auswählen.
+
+Lizenz
+Diese Application verwendet Soundeffekte lizensiert von www.freesound.org http://creativecommons.org/licenses/sampling+/1.0/ (Creative Commons Sampling Plus 1.0 License).

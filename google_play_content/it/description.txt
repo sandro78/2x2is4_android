@@ -1,0 +1,16 @@
+In una fase del percorso scolastico è previsto l'apprendimento delle tabelline. E toccato anche a mio figlio, che non ha potuto sottrarsi a questo destino.
+
+Abbiamo iniziato a studiare le tabelline con lo stesso vecchio metodo: abbiamo aperto il quaderno e abbiamo iniziato a impararle.
+Si tratta chiaramente di un sistema noioso e ormai fuori moda. In primo luogo, richiede una buona dose di pazienza da parte dei genitori: non è facile interrogarli diverse volte al giorno sulle tabelline. A volte, semplicemente manca il tempo. 
+Tuttavia, è stato facile trovare una soluzione a questo problema: ho deciso di scrivere un programma per l'apprendimento che avrebbe reso le tabelline piu interessanti agli occhi dei bambini. Le possibili scelte saranno palle di cannone. Il numero di risposte esatte, un colpo a un pirata. Se tardi a dare la risposta, il pirata ti colpisce. Chiaramente, frasi come “Papà, oggi ho ucciso un pirata in un livello difficile” sono migliori rispetto a frasi noiose come “Oggi ho imparato le tabelline fino al cinque.”
+
+Vantaggi:
+- Due tipi di operazioni aritmetiche: moltiplicazione e divisione;
+- Una tabella di moltiplicazione integrata per l'apprendimento;
+- 3 livelli di difficoltà (la velocità con cui si colpisce il pirata aumenta o diminuisce);
+- Due modi per inserire le risposte: in cifra o a risposta multipla;
+- È possibile salvare le partite già giocate in modo da tenere traccia dei progressi; e
+- La possibilità di scegliere la gamma delle equazioni usate.
+
+Licenza
+Gli effetti sonori usati in questa applicazione provengono dal sito www.freesound.org su licenza http://creativecommons.org/licenses/sampling+/1.0/ (Creative Commons Sampling Plus 1.0 License).

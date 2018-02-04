@@ -1,0 +1,16 @@
+À l'école, il finit toujours par y avoir un moment où il faut apprendre les tables de multiplication. Mon fils n'a pas été une exception, il n'a pas échappé à son destin.
+
+Nous avons commencé à apprendre les tables avec la même méthode qu'avant : nous avons ouvert un cahier et commencé à apprendre.
+C'est certainement une méthode ennuyeuse pour apprendre, qui est devenue démodée. Tout d'abord, il faut avoir de la patience en tant que parents : il est difficile de tester son propre enfant sur les tables de multiplication plusieurs fois par jour. Vous n'avez parfois tout simplement pas le temps pour ça. 
+Trouver une solution au problème a été facile pour moi : j'ai décidé de développer un programme d'apprentissage qui rendrait l'apprentissage des tables de multiplication plus intéressant pour les enfants. Toutes les options seraient représentées par des boulets de canon. Le nombre de bonnes réponses serait représenté par des tirs sur des pirates. Si vous réfléchissez trop longtemps, les pirates vous tirent dessus. Apparemment, les phrases telles que « Papa, aujourd'hui j'ai tiré sur un pirate au niveau difficile » sont plus faciles à prononcer que les phrases telles que « Aujourd'hui, j'ai appris mes tables de multiplication jusqu'à la table de 5 » prononcées d'un ton maussade.
+
+Avantages :
+- Deux types d'opérations arithmétiques : la multiplication et la division ;
+- Tables de multiplication intégrées pour l'apprentissage ;
+- 3 niveaux de difficulté (la vitesse à laquelle les pirates se font tirer dessus diminue ou augmente) ;
+- Deux méthodes d'entrée des réponses : en chiffres ou par un choix multiple ;
+- L'historique des parties précédentes peut être enregistré pour suivre les progrès effectués ; et
+- La possibilité de choisir la plage d'équations utilisée.
+
+Licence
+Des effets sonores provenant du site www.freesound.org et sous licence http://creativecommons.org/licenses/sampling+/1.0/ (Creative Commons Sampling Plus 1.0) ont été utilisés dans l'application.

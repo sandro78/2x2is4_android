@@ -1,0 +1,16 @@
+There is a period in a school life, when one has to learn the multiplication table. My son was not an exception and did not avoid the fate.
+
+We began to study the table the same old way: turned a notebook and started to learn.
+Obviously this is a boring way, which went out of date. First of all it requires parents’ patience: it is difficult to test the own child for knowledge of the table several times a day. Sometimes there is simply not time for this. 
+It was easy for me to find the decision of the problem- to write a trainer, which will make the learning of the table more interesting for a child. The set of options will be the cannon balls. The number of correct answers will be a shot at a pirate. If you think for a long time, then the pirate shoots at you. Apparently the phrases like ”Dad, today I shot a pirate at a complicates level" are better than dull phrases “Today I learned the multiplication table till 5”.
+
+Advantages:
+-Two kinds of arithmetic operations: multiplication and division
+-A built-in multiplication table for learning
+-3 levels of the level of complexity(the speed of shooting at pirate is raising or lowering)
+-Two types for answer entering: by figures and by multiple choice
+-The history of already played games can be saved in order to trace the progress
+-The possibility to choose the range of the derived equations
+
+License
+The sound effects of the site http://www.freesound.org per license http://creativecommons.org/licenses/sampling+/1.0/ (Creative Commons Sampling Plus 1.0 License) were used for application.
