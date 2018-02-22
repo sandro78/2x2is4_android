@@ -43,7 +43,6 @@ import android.util.Log;
 import android.view.*;
 import android.view.animation.*;
 import android.widget.*;
-import com.oktogames.app_2x2is4.light.BuyButtonTouchListener;
 import com.oktogames.app_2x2is4.light.R;
 import com.oktogames.app_2x2is4.light.TwoXTwoIs4Activity;
 import com.oktogames.app_2x2is4.light.action.GameControlButtonOnTouchListener;
@@ -137,42 +136,6 @@ public class GameActivity extends SharedActivity {
     private int resultSowDialogCounter;
     private boolean isShowRateDialog;
     private static final String TAG = "GameActivity";
-    private boolean isPremiumGameMode = false;
-
-    private int getMaxFreeNumber() {
-        return 2;
-    }
-
-    private void startPremiumGame() {
-        int premiumGameNumber = TwoXTwoIs4Activity.bumpAndStorePremiumGameNumber(this);
-        number = premiumGameNumber;
-        isPremiumGameMode = true;
-        restartBtn.setVisibility(View.INVISIBLE);
-        ImageView resultRestartButton = (ImageView) findViewById(R.id.result_reload);
-        resultRestartButton.setVisibility(View.INVISIBLE);
-        RelativeLayout resultsLayout = (RelativeLayout) findViewById(R.id.result_id);
-        resultsLayout.setVisibility(View.GONE);
-
-        final GameActivity _self = this;
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.premium_game_title);
-        Resources res = getResources();
-        builder.setMessage(String.format(res.getString(R.string.premium_game_explanation), premiumGameNumber+2));
-        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int index) {
-                _self.startGame();
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
-            @Override
-            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                return i == KeyEvent.KEYCODE_BACK;
-            }
-        });
-        dialog.show();
-    }
 
     public void onCreate(Bundle savedInstanceState) {
         if (Runtime.getRuntime().maxMemory()< heapSize){
@@ -490,18 +453,11 @@ public class GameActivity extends SharedActivity {
             }
             public void onStartTrackingTouch(SeekBar seekBar) {}
             public void onStopTrackingTouch(SeekBar seekBar) {
-                if (seekBar.getProgress()>getMaxFreeNumber()) {
-                    number = getMaxFreeNumber();
+                if (seekBar.getProgress()>10) {
+                    number = 10;
                     seekBar.setProgress(number);
                     numberTextView.setText(String.valueOf(number + 2));
                     changeVisibilityOfTables(number, true, operationType);
-
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            showBuyAlert(GameActivity.this, R.string.times_promo);
-                        }
-                    }, 300);
                 }
             }
         });
@@ -1792,18 +1748,8 @@ public class GameActivity extends SharedActivity {
     @Override
     protected void onResume() {
         Bundle b = getIntent().getExtras();
-        if(b != null)
-            isPremiumGameMode = b.getBoolean("premium_mode");
-
-        if (isPremiumGameMode) {
-            number = getSettings().getInt(
-                    TwoXTwoIs4Activity.premiumGameNumberSettingsKey, TwoXTwoIs4Activity.minPremiumGameFreeNumber
-            );
-        }
-        else {
-            number = getSettings().getInt(GAME_NUMBER, number);
-        }
-        MaxCurrentLearnNumber.setCurrentNumber(getSettings().getInt(CURRENT_NUMBER, getMaxFreeNumber()));
+        number = getSettings().getInt(GAME_NUMBER, number);
+        MaxCurrentLearnNumber.setCurrentNumber(getSettings().getInt(CURRENT_NUMBER, 9));
 
         super.onResume();
         //Init UI elements
@@ -1862,7 +1808,7 @@ public class GameActivity extends SharedActivity {
         finishBtn.setBackgroundDrawable(DrawableUtils.getFinish(this));
         restartBtn = (Button) findViewById(R.id.restart);
         restartBtn.setBackgroundDrawable(DrawableUtils.getRestart(this));
-            restartBtn.setVisibility(isPremiumGameMode ? View.INVISIBLE : View.VISIBLE);
+            restartBtn.setVisibility(View.VISIBLE);
         soundButton = (Button) findViewById(R.id.sound);
 
         finishBtn.setOnClickListener(new View.OnClickListener() {
@@ -1901,28 +1847,17 @@ public class GameActivity extends SharedActivity {
         });
         resultRestartButton.setOnTouchListener(new GameControlButtonOnTouchListener(this, resultRestartButton,
                 GameControlButtonOnTouchListener.TypeControlButton.RESTART_IMG));
-            resultRestartButton.setVisibility(isPremiumGameMode ? View.INVISIBLE : View.VISIBLE);
-
-            Button buy_button = (Button) findViewById(R.id.buy_button);
-            buy_button.setBackgroundDrawable(DrawableUtils.getDrawableFromAssets(this, DrawableUtils.PRO));
-            buy_button.setOnTouchListener(new BuyButtonTouchListener(this, R.id.buy_button));
-
-            Button premium_button = (Button) findViewById(R.id.premium_button);
-            premium_button.setBackgroundDrawable(DrawableUtils.getDrawableFromAssets(this, DrawableUtils.PRO));
-            premium_button.setOnTouchListener(new BuyButtonTouchListener(this, R.id.premium_button));
+            resultRestartButton.setVisibility(View.VISIBLE);
 
             animationBall = (ImageView)findViewById(R.id.animation_ball);
         animationBall.setVisibility(View.INVISIBLE);
-            if (!isPremiumGameMode)
-                prepareAndShowSettings();
-            else
-                startGame();
+            prepareAndShowSettings();
             if(isHeapSmall){
                 initByHeapSmall();
             }
 
         } else if (engine!=null && engine.combinationsCount()>0){
-            MaxCurrentLearnNumber.setCurrentNumber(getSettings().getInt(CURRENT_NUMBER, getMaxFreeNumber()));
+            MaxCurrentLearnNumber.setCurrentNumber(getSettings().getInt(CURRENT_NUMBER, 9));
             if(engine!=null && engine.combinationsCount()>0){
 
                 runOnUiThread(new Runnable() {
@@ -2033,28 +1968,26 @@ public class GameActivity extends SharedActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        if (!isPremiumGameMode) {
-            SharedPreferences.Editor editor = getEditor();
-            editor.putInt(GAME_NUMBER, number);
-            editor.commit();
-            int level = 1;
-            if (gameLevel == GameLevel.MEDIUM) level = 2;
-            else if (gameLevel == GameLevel.HARD) level = 3;
-            editor.putInt(GAME_LEVEL, level);
-            editor.commit();
+        SharedPreferences.Editor editor = getEditor();
+        editor.putInt(GAME_NUMBER, number);
+        editor.commit();
+        int level = 1;
+        if (gameLevel == GameLevel.MEDIUM) level = 2;
+        else if (gameLevel == GameLevel.HARD) level = 3;
+        editor.putInt(GAME_LEVEL, level);
+        editor.commit();
 
-            int operation = 1;
-            if (operationType == OperationType.DIVISION) operation = 2;
-            editor.putInt(GAME_OPERATION, operation);
-            editor.commit();
+        int operation = 1;
+        if (operationType == OperationType.DIVISION) operation = 2;
+        editor.putInt(GAME_OPERATION, operation);
+        editor.commit();
 
 
-            editor.putInt(RESULT_SHOW_COUNT, resultSowDialogCounter);
-            editor.commit();
+        editor.putInt(RESULT_SHOW_COUNT, resultSowDialogCounter);
+        editor.commit();
 
-            editor.putBoolean(RATE_DIALOG_SHOW, isShowRateDialog);
-            editor.commit();
-        }
+        editor.putBoolean(RATE_DIALOG_SHOW, isShowRateDialog);
+        editor.commit();
 
         AudioManager mAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         mAudioManager.setStreamMute(AudioManager.STREAM_MUSIC, false);

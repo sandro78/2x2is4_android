@@ -27,11 +27,4 @@
     <string name="rate_it">تقييم</string>
     <string name="never">أبدًا</string>
     <string name="settings">الإعدادات</string>
-    <string name="no_AD">No AD</string>
-    <string name="no_AD_explanation">Sorry no ADs to watch on the moment. Please check your Internet connectivity and try again later.</string>
-    <string name="premium_game_title">Premium game</string>
-    <string name="premium_game_explanation">You\'ve got a chance to play premium game till %d number! Repeat procedure in order to get next level of premium game.</string>
-    <string name="premium_game_button_text">Premium\ngame</string>
-    <string name="full_version_explanation">The full version is ad-free and allows you to learn the multiplication table of 12 by 12.</string>
-    <string name="full_version_button_text">Buy full\nversion</string>
 </resources>

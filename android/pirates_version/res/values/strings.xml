@@ -28,16 +28,6 @@
     <string name="rate_it">Rate it</string>
     <string name="never">Never</string>
     <string name="settings">Settings</string>
-    <string name="division_promo">Division mode is available just at PRO version</string>
-    <string name="times_promo">Times tables 12x12 are available just at PRO version</string>
-    <string name="buy">Buy</string>
-    <string name="no_AD">No AD</string>
-    <string name="no_AD_explanation">Sorry no ADs to watch on the moment. Please check your Internet connectivity and try again later.</string>
-    <string name="premium_game_title">Premium game</string>
-    <string name="premium_game_explanation">You\'ve got a chance to play premium game till %d number! Repeat procedure in order to get next level of premium game.</string>
-    <string name="premium_game_button_text">Premium\ngame</string>
-    <string name="full_version_explanation">The full version is ad-free and allows you to learn the multiplication table of 12 by 12.</string>
-    <string name="full_version_button_text">Buy full\nversion</string>
 
 
     <string name="header2">2</string>

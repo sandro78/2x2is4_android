@@ -46,53 +46,9 @@ import com.oktogames.app_2x2is4.light.utils.DrawableUtils;
 import com.oktogames.app_2x2is4.light.utils.MediaPlayerFacade;
 
 public class TwoXTwoIs4Activity extends SharedActivity {
-    public final static String premiumGameNumberSettingsKey = "E5228DF4-8A82-40D9-B6D7-FD72230B5082";
-    public final static int minPremiumGameFreeNumber = 3;
-    public final static int maxPremiumGameFreeNumber = 10;
     private boolean isSecondTimeStart;
     private RelativeLayout bannerRelativeLayout;
     private ImageView closeImageView;
-
-    public static int bumpAndStorePremiumGameNumber(SharedActivity activity) {
-        int premiumGameNumber = minPremiumGameFreeNumber;
-        SharedPreferences settings = activity.getSettings();
-        SharedPreferences.Editor editor = activity.getEditor();
-        if (settings.contains(premiumGameNumberSettingsKey)) {
-            premiumGameNumber = settings.getInt(premiumGameNumberSettingsKey, minPremiumGameFreeNumber);
-            premiumGameNumber = Math.min(premiumGameNumber+1, maxPremiumGameFreeNumber);
-        }
-        editor.putInt(premiumGameNumberSettingsKey, premiumGameNumber);
-        editor.commit();
-        return premiumGameNumber;
-    }
-
-    private void startPremiumGame() {
-        int premiumGameNumber = bumpAndStorePremiumGameNumber(this);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.premium_game_title);
-        Resources res = getResources();
-        builder.setMessage(String.format(res.getString(R.string.premium_game_explanation), premiumGameNumber+2));
-        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int index) {
-                Intent i = new Intent(TwoXTwoIs4Activity.this, GameActivity.class);
-                Bundle b = new Bundle();
-                b.putBoolean("premium_mode", true);
-                i.putExtras(b);
-                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(i);
-                finish();
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
-            @Override
-            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                return i == KeyEvent.KEYCODE_BACK;
-            }
-        });
-        dialog.show();
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -294,12 +250,5 @@ public class TwoXTwoIs4Activity extends SharedActivity {
                 }
             }, 100);
         }
-        Button buy_button = (Button) findViewById(R.id.buy_button);
-        buy_button.setBackgroundDrawable(DrawableUtils.getDrawableFromAssets(this, DrawableUtils.PRO));
-        buy_button.setOnTouchListener(new BuyButtonTouchListener(this, R.id.buy_button));
-
-        Button premium_button = (Button) findViewById(R.id.premium_button);
-        premium_button.setBackgroundDrawable(DrawableUtils.getDrawableFromAssets(this, DrawableUtils.PRO));
-        premium_button.setOnTouchListener(new BuyButtonTouchListener(this, R.id.premium_button));
     }
 }

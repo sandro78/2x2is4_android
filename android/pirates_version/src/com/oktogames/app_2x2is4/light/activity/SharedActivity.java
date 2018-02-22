@@ -127,33 +127,4 @@ public class SharedActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
     }
-
-    protected static void showBuyAlert(final Activity activity, int stringResource){
-        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setTitle(R.string.buy);
-        builder.setMessage(stringResource);
-        builder.setPositiveButton(R.string.buy, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-                new Handler().post(new Runnable() {
-                    public void run() {
-                        Intent browse = new Intent( Intent.ACTION_VIEW , Uri.parse("market://details?id=com.oktogames") );
-                        activity.startActivity(browse);
-                    }
-                });
-            }
-        });
-
-        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.setOnKeyListener(new DialogInterface.OnKeyListener() {
-            @Override
-            public boolean onKey(DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
-                return i == KeyEvent.KEYCODE_BACK;
-            }
-        });
-        dialog.show();
-    }
 }

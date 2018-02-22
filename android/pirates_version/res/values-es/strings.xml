@@ -29,12 +29,4 @@
     <string name="settings">Configuración</string>
     <string name="division_promo">El modo División solo está disponible en la versión PRO de la aplicación</string>
     <string name="times_promo">Las tablas de multiplicación 12x12 solo están disponibles en la versión PRO de la aplicación</string>
-    <string name="buy">Comprar</string>
-    <string name="no_AD">Sin anuncios</string>
-    <string name="no_AD_explanation">Lo sentimos, no hay anuncios para ver en este momento. Por favor, comprueba tu conectividad de Internet y prueba de nuevo más tarde.</string>
-    <string name="premium_game_title">Juego premium</string>
-    <string name="premium_game_explanation">¡Tienes una oportunidad de jugar a un juego premium hasta el número %d! Repite el procedimiento para alcanzar el siguiente nivel del juego premium.</string>
-    <string name="premium_game_button_text">Juego\npremium</string>
-    <string name="full_version_explanation">La versión completa no tiene anuncios y te permite aprender la tabla de multiplicar del 12.</string>
-    <string name="full_version_button_text">Versión completa</string>
 </resources>

@@ -43,7 +43,6 @@ import com.oktogames.app_2x2is4.light.utils.DrawableUtils;
 public class SettingsActivity extends SharedActivity {
     private TextView numberTextView;
     private int currentNumber = 9;
-    private int maxFreeNumber = 7;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,24 +64,23 @@ public class SettingsActivity extends SharedActivity {
         final SeekBar seekBar = (SeekBar) findViewById(R.id.seek_settings);
         seekBar.setIndeterminate(false);
         seekBar.setProgress(currentNumber);
-        changeVisibilityOfRows(currentNumber, false, false);
+        changeVisibilityOfRows(currentNumber, false);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
                 currentNumber = progress;
                 numberTextView.setText(String.valueOf(progress + 3));
-                changeVisibilityOfRows(progress, true, false);
-
+                changeVisibilityOfRows(progress, true);
             }
 
             public void onStartTrackingTouch(SeekBar seekBar) {
             }
 
             public void onStopTrackingTouch(SeekBar seekBar) {
-                if(seekBar.getProgress()>maxFreeNumber){
-                    currentNumber = maxFreeNumber;
-                    numberTextView.setText(String.valueOf(maxFreeNumber + 3));
-                    changeVisibilityOfRows(maxFreeNumber, true, true);
-                    seekBar.setProgress(maxFreeNumber);
+                if(seekBar.getProgress()>9){
+                    currentNumber = 9;
+                    numberTextView.setText(String.valueOf(12));
+                    changeVisibilityOfRows(9, true);
+                    seekBar.setProgress(9);
                 }
             }
         });
@@ -137,7 +135,7 @@ public class SettingsActivity extends SharedActivity {
         super.onRestart();
     }
 
-    private void changeVisibilityOfRows(int progress, boolean isAnimate, boolean isProDialogShow) {
+    private void changeVisibilityOfRows(int progress, boolean isAnimate) {
         TextView text1 = (TextView) findViewById(R.id.s1);
         TextView text2 = (TextView) findViewById(R.id.s2);
         TextView text3 = (TextView) findViewById(R.id.s3);
@@ -169,14 +167,6 @@ public class SettingsActivity extends SharedActivity {
                 tv.setVisibility(View.VISIBLE);
             }
             i++;
-        }
-        if (isProDialogShow){
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    showBuyAlert(SettingsActivity.this, R.string.times_promo);
-                }
-            }, 300);
         }
     }
 

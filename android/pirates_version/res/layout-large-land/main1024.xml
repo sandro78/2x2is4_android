@@ -4,17 +4,6 @@
                 android:layout_height="fill_parent"
                 android:id="@+id/main_layout"
         >
-    <Button android:layout_width="105dp"
-            android:layout_height="75dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:id="@+id/buy_button"
-            android:textColor="@color/white"
-            android:textSize="40dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="12dp"
-            android:text="PRO"
-            />
 	<LinearLayout
 		  android:orientation="horizontal"
 		  android:layout_width="fill_parent"

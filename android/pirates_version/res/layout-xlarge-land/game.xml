@@ -524,28 +524,6 @@
 							  android:textColor="@color/white"/>
 
 				</TableRow>
-                <TableRow android:gravity="center">
-                    <Button android:layout_width="280dp"
-                            android:layout_height="150dp"
-                            android:id="@+id/buy_button"
-                            android:textColor="@color/white"
-                            android:textSize="54sp"
-                            android:layout_marginTop="30dp"
-                            android:layout_marginRight="30dp"
-                            android:textStyle="bold"
-                            android:text="@string/full_version_button_text"
-                    />
-                    <Button android:layout_width="280dp"
-                            android:layout_height="150dp"
-                            android:id="@+id/premium_button"
-                            android:textColor="@color/white"
-                            android:textSize="54sp"
-                            android:layout_marginTop="30dp"
-                            android:layout_marginRight="30dp"
-                            android:textStyle="bold"
-                            android:text="@string/premium_game_button_text"
-                    />
-                </TableRow>
 			</TableLayout>
 			<!--Finish Result View-->
 			<ImageView android:layout_height="110dp"

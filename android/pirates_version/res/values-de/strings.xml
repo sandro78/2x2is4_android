@@ -27,14 +27,4 @@
     <string name="rate_it">Bewerten</string>
     <string name="never">Nie</string>
     <string name="settings">Einstellungen</string>
-    <string name="division_promo">Abteilungsmodus ist nur bei PRO-Version der Anwendung verfügbar</string>
-    <string name="times_promo">Stundenpläne 12x12 sind nur bei PRO-Version der Anwendung verfügbar</string>
-    <string name="buy">Kaufen</string>
-    <string name="no_AD">Keine Werbung</string>
-    <string name="no_AD_explanation">Entschuldigung, es gibt momentan keine Werbungen zum ansehen. Bitte überprüfe deine Internetverbindung und versuche es später nochmal.</string>
-    <string name="premium_game_title">Premium-Spiel</string>
-    <string name="premium_game_explanation">Du hast die Chance erhalten, ein Premium-Spiel bis Nummer %d zu spielen! Wiederhole den Vorgang, um zum nächsten Level des Premium-Spiels zu gelangen.</string>
-    <string name="premium_game_button_text">Premium\nSpiel</string>
-    <string name="full_version_explanation">Die Vollversion ist werbefrei und gibt Ihnen die Möglichkeit die Multiplikationstabelle bis 12 mal 12 zu erlernen.</string>
-    <string name="full_version_button_text">Vollversion</string>
 </resources>

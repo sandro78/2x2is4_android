@@ -62,8 +62,6 @@ public class DrawableUtils {
     public final static String BUTTON_SELECTED = "img/button_selected.png";
     public final static String GAME_BACKGROUND = "img/background.png";
     public final static String BOMB = "img/bomb.png";
-    public final static String PRO = "img/buy_button.png";
-    public final static String PRO_PRESSED = "img/buy_button_pressed.png";
     public final static String BOMB_PRESSED = "img/bomb_pressed.png";
     public static final String SHOW_RESULTS_BG = "img/results_bg_landscape.png";
     public static final String GAME_SETTINGS_EMPTY = "img/game_settings_empty.png";

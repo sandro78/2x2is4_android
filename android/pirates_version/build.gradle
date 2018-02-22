@@ -18,8 +18,8 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        versionCode 10
-        versionName "1.7"
+        versionCode 11
+        versionName "1.8"
         minSdkVersion 15
         multiDexEnabled true
     }

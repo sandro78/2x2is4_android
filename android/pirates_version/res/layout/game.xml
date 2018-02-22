@@ -527,28 +527,6 @@
 							  android:id="@+id/helps_count"
 							  android:textColor="@color/white"/>
 				</TableRow>
-                <TableRow android:gravity="center">
-                    <Button android:layout_width="160dp"
-                            android:layout_height="80dp"
-                            android:id="@+id/buy_button"
-                            android:textColor="@color/white"
-                            android:textSize="27sp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="@string/full_version_button_text"
-                            android:textStyle="bold"
-                    />
-                    <Button android:layout_width="160dp"
-                            android:layout_height="80dp"
-                            android:id="@+id/premium_button"
-                            android:textColor="@color/white"
-                            android:textSize="27sp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="10dp"
-                            android:text="@string/premium_game_button_text"
-                            android:textStyle="bold"
-                    />
-                </TableRow>
 			</TableLayout>
 			<!--Finish Result View-->
 			<ImageView android:layout_height="60dp"
